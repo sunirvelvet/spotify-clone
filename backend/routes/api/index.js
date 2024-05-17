@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+const usersRouter = express.Router();
 
 router.use('/users', usersRouter);
 

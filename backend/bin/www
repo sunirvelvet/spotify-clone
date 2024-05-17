@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
 dotenv.config();
 
 const { port } = require('../config');
 const app = require('../app');
-const db = require('../db/models');
+const db = require('../models');
 
 
 db.sequelize.authenticate()
